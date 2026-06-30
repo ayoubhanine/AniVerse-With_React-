@@ -11,54 +11,59 @@ import NotFound from "../pages/NotFound/NotFound"
 import Favorites from "../pages/Favorites/Favorites"
 import Dashboard from "../pages/Dashboard/Dashboard"
 import Characters from "../pages/Characters/Characters"
-import  CharactersDetails from "../pages/CharacterDetails/CharacterDetails"
+import  CharacterDetails from "../pages/CharacterDetails/CharacterDetails"
 
-const AppRouter=createBrowserRouter([
-    {
-        path:"/",
-        element:<MainLayout/>,
-        children=[
-            {
-                index:true,
-                element:<Home/>
-            },
-            {
-                path:"/anime",
-                element:<Anime/>
-            },
-            {
-                path:"/anime/:animeId",
-                element:<AnimeDetails/>
-            },
-            {
-                path:"anime/:animeId/characters",
-                element:<Characters/>
-            },
-              {
-                path:"characters",
-                element:<Characters/>
-            },
-            {
-                path:"characters/:charactersId",
-                element:<CharactersDetails/>
-            },
-            {
-                path:"favorites",
-                element:<Favorites/>
-            },
-            {
-                path:"my-library",
-                element:<Library/>
-            },
-            {
-                path:"my-ratings",
-                element:<Ratings/>
-            },
-            {
-                path:"dashboard",
-                element:<Dashboard/>
-            }
-        ]
-    }
-])
+const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "anime",
+        element: <Anime />,
+      },
+      {
+        path: "anime/:animeId",
+        element: <AnimeDetails />,
+      },
+      {
+        path: "anime/:animeId/characters",
+        element: <Characters />,
+      },
+      {
+        path: "characters",
+        element: <Characters />,
+      },
+      {
+        path: "characters/:characterId",
+        element: <CharacterDetails />,
+      },
+      {
+        path: "favorites",
+        element: <Favorites />,
+      },
+      {
+        path: "my-library",
+        element: <Library />,
+      },
+      {
+        path: "my-ratings",
+        element: <Ratings />,
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+    ],
+  },
+
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 export default AppRouter;

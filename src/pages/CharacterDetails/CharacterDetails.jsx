@@ -1,6 +1,6 @@
 export default function CharacterDetails(){
-    return
+    return(
     <div>
         <h1>CharacterDetails</h1>
-    </div>
+    </div>)
 }

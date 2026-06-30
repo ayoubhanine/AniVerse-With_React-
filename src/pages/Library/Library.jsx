@@ -1,7 +1,7 @@
 export default function Library(){
 
-    return
+    return(
     <div>
         <h1>Library</h1>
-    </div>
+    </div>)
 }

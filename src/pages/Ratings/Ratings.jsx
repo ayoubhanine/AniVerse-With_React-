@@ -1,6 +1,6 @@
 export default function Ratings(){
-    return
+    return(
     <div>
         <h1>Ratings</h1>
-    </div>
+    </div>)
 }

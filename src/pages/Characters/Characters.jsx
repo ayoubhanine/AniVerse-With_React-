@@ -1,6 +1,6 @@
 export default function Chracters(){
-    return
+    return(
     <div>
         <h1>Chracters</h1>
-    </div>
+    </div>)
 }
