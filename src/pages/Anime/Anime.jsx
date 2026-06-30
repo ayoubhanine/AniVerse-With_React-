@@ -1,7 +1,7 @@
 export default function Anime() {
   return (
     <div>
-      <h1>Anime Page</h1>
+      <h1 className="bg-amber-300">Anime Page</h1>
     </div>
   );
 }
