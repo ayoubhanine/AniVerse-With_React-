@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Star } from "lucide-react";
-import { fetchSeasonalAnime } from "../features/anime/animeThunk";
+import { fetchSeasonalAnime } from "../features/anime/animeSlice";
 
 export default function SeasonalAnime() {
   const dispatch = useDispatch();

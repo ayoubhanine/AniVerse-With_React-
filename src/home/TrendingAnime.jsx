@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTrendingAnime } from "../features/anime/animeThunk";
+import { fetchTrendingAnime } from "../features/anime/animeSlice";
 import AnimeCard from "./AnimeCard";
 
 export default function TrendingAnime() {
