@@ -12,3 +12,20 @@ export const getSeasonalAnime = async () => {
 
   return response.data.data;
 };
+export const getAnimeList = async (
+  page = 1,
+  search = "",
+  genre = "",
+  type = ""
+) => {
+  const { data } = await api.get("/anime", {
+    params: {
+      page,
+      q: search,
+      genres: genre,
+      type,
+    },
+  });
+
+  return data;
+};

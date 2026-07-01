@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getTrendingAnime, getSeasonalAnime } from "../../api/animeApi";
+import { getTrendingAnime, getSeasonalAnime,getAnimeList } from "../../api/animeApi";
 
 
 export const fetchTrendingAnime = createAsyncThunk(
@@ -24,6 +24,21 @@ export const fetchSeasonalAnime = createAsyncThunk(
       return seasonalAnime;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
+export const fetchAnimeList = createAsyncThunk(
+  "anime/fetchAnimeList",
+  async (
+    { page = 1, search = "", genre = "", type = "" },
+    { rejectWithValue }
+  ) => {
+    try {
+      return await getAnimeList(page, search, genre, type);
+    } catch (error) {
+      return rejectWithValue(
+        error.response?.data?.message || error.message
+      );
     }
   }
 );
