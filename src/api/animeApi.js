@@ -29,3 +29,7 @@ export const getAnimeList = async (
 
   return data;
 };
+export const getAnimDetails=async(id)=>{
+  const {data}=await api.get(`anime/${id}/full`)
+  return data.data
+}

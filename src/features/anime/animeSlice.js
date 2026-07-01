@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { getTrendingAnime,getSeasonalAnime,getAnimeList } from "../../api/animeApi";
+import { getTrendingAnime,getSeasonalAnime,getAnimeList,getAnimDetails } from "../../api/animeApi";
 
 
 export const fetchTrendingAnime = createAsyncThunk(
@@ -34,12 +34,25 @@ export const fetchAnimeList = createAsyncThunk(
     }
   }
 );
+export const fetchAnimeDetails = createAsyncThunk(
+  "anime/fetchAnimeDetails",
+  async (id, { rejectWithValue }) => {
+    try {
+      return await getAnimDetails(id);
+    } catch (error) {
+      return rejectWithValue(
+        error.response?.data?.message || error.message
+      );
+    }
+  }
+);
 
 
 const initialState = {
   trendingAnime: [],
   seasonalAnime: [],
   animeList: [],
+  animeDetails: null,
   pagination: {
     currentPage: 1,
     lastPage: 1,
@@ -110,7 +123,24 @@ const animeSlice = createSlice({
       .addCase(fetchSeasonalAnime.rejected, (state, action) => {
         state.loadings.seasonal = false;
         state.error = action.payload;
-      });
+      })
+
+      .addCase(fetchAnimeDetails.pending, (state) => {
+  state.loadings.details = true;
+  state.error = null;
+})
+
+.addCase(fetchAnimeDetails.fulfilled, (state, action) => {
+  state.loadings.details = false;
+  state.animeDetails = action.payload;
+})
+
+.addCase(fetchAnimeDetails.rejected, (state, action) => {
+  state.loadings.details = false;
+  state.error = action.payload;
+})
+
+      
   },
 });
 
