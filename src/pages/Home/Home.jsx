@@ -1,7 +1,13 @@
+import Hero from "../../home/Hero";
+import TrendingAnime from "../../home/TrendingAnime";
+import SeasonalAnime from "../../home/SeasonalAnime";
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Home Page</h1>
-    </div>
+    <>
+      <Hero />
+     <TrendingAnime/>
+      <SeasonalAnime /> 
+    </>
   );
 }
