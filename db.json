@@ -1,0 +1,36 @@
+{
+  "favorites": [
+    {
+      "mal_id": 6,
+      "title": "Trigun",
+      "image": "https://cdn.myanimelist.net/images/anime/1130/120002l.jpg",
+      "score": 8.22,
+      "id": "temtzpJM1oY"
+    },
+    {
+      "mal_id": 7,
+      "title": "Witch Hunter Robin",
+      "image": "https://cdn.myanimelist.net/images/anime/10/19969l.jpg",
+      "score": 7.24,
+      "id": "Kgn4nv1IKC4"
+    }
+  ],
+  "ratings": [],
+  "library": [
+    {
+      "mal_id": 5,
+      "title": "Cowboy Bebop: Tengoku no Tobira",
+      "image": "https://cdn.myanimelist.net/images/anime/1439/93480l.jpg",
+      "status": "Plan To Watch",
+      "id": "eYhTP0km1G4"
+    },
+    {
+      "mal_id": 6,
+      "title": "Trigun",
+      "image": "https://cdn.myanimelist.net/images/anime/1130/120002l.jpg",
+      "status": "Plan To Watch",
+      "id": "H4CFIZguQdw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
