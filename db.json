@@ -18,18 +18,11 @@
   "ratings": [],
   "library": [
     {
-      "mal_id": 5,
-      "title": "Cowboy Bebop: Tengoku no Tobira",
-      "image": "https://cdn.myanimelist.net/images/anime/1439/93480l.jpg",
-      "status": "Plan To Watch",
-      "id": "eYhTP0km1G4"
-    },
-    {
-      "mal_id": 6,
-      "title": "Trigun",
-      "image": "https://cdn.myanimelist.net/images/anime/1130/120002l.jpg",
-      "status": "Plan To Watch",
-      "id": "H4CFIZguQdw"
+      "mal_id": 24,
+      "title": "School Rumble",
+      "image": "https://cdn.myanimelist.net/images/anime/1465/142014l.jpg",
+      "status": "Completed",
+      "id": "88_qd5CO8ng"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
