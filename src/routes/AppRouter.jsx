@@ -12,6 +12,7 @@ import Favorites from "../pages/Favorites/Favorites"
 import Dashboard from "../pages/Dashboard/Dashboard"
 import Characters from "../pages/Characters/Characters"
 import  CharacterDetails from "../pages/CharacterDetails/CharacterDetails"
+import CharactersList from "../pages/CharactersList/CharactersList";
 
 const AppRouter = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "characters",
-        element: <Characters />,
+        element: <CharactersList />,
       },
       {
         path: "characters/:characterId",
