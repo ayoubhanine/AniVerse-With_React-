@@ -27,6 +27,13 @@
       "image": "https://cdn.myanimelist.net/images/anime/1079/133529l.jpg",
       "score": 7.91,
       "id": "RnxLdbwyep0"
+    },
+    {
+      "mal_id": 29,
+      "title": "Zipang",
+      "image": "https://cdn.myanimelist.net/images/anime/13/75740l.jpg",
+      "score": 7.54,
+      "id": "kcCV5INTQog"
     }
   ],
   "ratings": [
@@ -34,7 +41,7 @@
       "mal_id": 5,
       "title": "Cowboy Bebop: Tengoku no Tobira",
       "image": "https://cdn.myanimelist.net/images/anime/1439/93480l.jpg",
-      "rating": 3,
+      "rating": 7,
       "note": "",
       "id": "rwarNmdAANU"
     }
