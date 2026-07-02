@@ -66,6 +66,7 @@ const initialState = {
     trending: false,
     seasonal: false,
     list: false,
+    details:false,
   },
   error: null,
 };
@@ -127,6 +128,7 @@ const animeSlice = createSlice({
 
       .addCase(fetchAnimeDetails.pending, (state) => {
   state.loadings.details = true;
+  state.animeDetails=null
   state.error = null;
 })
 
