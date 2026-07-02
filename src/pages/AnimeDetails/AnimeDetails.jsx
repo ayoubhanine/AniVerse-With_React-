@@ -6,7 +6,6 @@ import { fetchAnimeDetails } from "../../features/anime/animeSlice";
 
 import AnimeHero from "../../components/anime/AnimeHero"
 import AnimeInfo from "../../components/anime/AnimeInfo"
-import AnimeTrailer from "../../components/anime/AnimeTrailer";
 import AnimeActions from "../../components/anime/AnimeActions";
 
 export default function AnimeDetails() {
@@ -49,8 +48,6 @@ export default function AnimeDetails() {
         <AnimeActions anime={animeDetails} />
 
         <AnimeInfo anime={animeDetails} />
-
-        <AnimeTrailer anime={animeDetails} />
 
       </div>
     </section>
