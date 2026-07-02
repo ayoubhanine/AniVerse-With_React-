@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Characters", path: "/characters" },
   { name: "Favorites", path: "/favorites" },
   { name: "My Library", path: "/my-library" },
+  { name: "My Ratings", path: "/my-ratings" },
   { name: "Dashboard", path: "/dashboard" },
 ];
 
@@ -45,18 +46,18 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <div className="flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2">
-            <Search size={16} className="text-slate-400" />
+            {/* <Search size={16} className="text-slate-400" /> */}
 
-            <input
+            {/* <input
               type="text"
               placeholder="Search anime..."
               className="w-44 bg-transparent text-sm text-white placeholder:text-slate-500 focus:outline-none"
-            />
+            /> */}
           </div>
 
-          <button className="rounded-full border border-slate-700 bg-slate-900/60 p-2 text-slate-300 hover:text-white">
+          {/* <button className="rounded-full border border-slate-700 bg-slate-900/60 p-2 text-slate-300 hover:text-white">
             <Bell size={18} />
-          </button>
+          </button> */}
 
           {/* <button className="rounded-full border border-slate-700 bg-slate-900/60 p-2 text-slate-300 hover:text-white">
             <Moon size={18} />
@@ -65,9 +66,9 @@ export default function Navbar() {
 
        
         <div className="hidden items-center gap-3 md:flex lg:hidden">
-          <button className="rounded-full border border-slate-700 bg-slate-900/60 p-2 text-slate-300">
+          {/* <button className="rounded-full border border-slate-700 bg-slate-900/60 p-2 text-slate-300">
             <Search size={18} />
-          </button>
+          </button> */}
 
           <button
             onClick={() => setIsOpen(!isOpen)}
