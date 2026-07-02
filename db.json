@@ -1,39 +1,67 @@
 {
   "favorites": [
     {
+      "mal_id": 5,
+      "title": "Cowboy Bebop: Tengoku no Tobira",
+      "image": "https://cdn.myanimelist.net/images/anime/1439/93480l.jpg",
+      "score": 8.38,
+      "genres": [
+        {
+          "mal_id": 1,
+          "type": "anime",
+          "name": "Action",
+          "url": "https://myanimelist.net/anime/genre/1/Action"
+        },
+        {
+          "mal_id": 24,
+          "type": "anime",
+          "name": "Sci-Fi",
+          "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+        }
+      ],
+      "id": "y9vAZqWqBEo"
+    },
+    {
       "mal_id": 6,
       "title": "Trigun",
       "image": "https://cdn.myanimelist.net/images/anime/1130/120002l.jpg",
       "score": 8.22,
-      "id": "temtzpJM1oY"
+      "genres": [
+        {
+          "mal_id": 1,
+          "type": "anime",
+          "name": "Action",
+          "url": "https://myanimelist.net/anime/genre/1/Action"
+        },
+        {
+          "mal_id": 2,
+          "type": "anime",
+          "name": "Adventure",
+          "url": "https://myanimelist.net/anime/genre/2/Adventure"
+        },
+        {
+          "mal_id": 24,
+          "type": "anime",
+          "name": "Sci-Fi",
+          "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
+        }
+      ],
+      "id": "0sPTrlzi4Ng"
     },
     {
-      "mal_id": 7,
-      "title": "Witch Hunter Robin",
-      "image": "https://cdn.myanimelist.net/images/anime/10/19969l.jpg",
-      "score": 7.24,
-      "id": "Kgn4nv1IKC4"
-    },
-    {
-      "mal_id": 26,
-      "title": "Texhnolyze",
-      "image": "https://cdn.myanimelist.net/images/anime/1027/131977l.jpg",
-      "score": 7.76,
-      "id": "8BXAe7YbN2Q"
-    },
-    {
-      "mal_id": 15,
-      "title": "Eyeshield 21",
-      "image": "https://cdn.myanimelist.net/images/anime/1079/133529l.jpg",
-      "score": 7.91,
-      "id": "RnxLdbwyep0"
-    },
-    {
-      "mal_id": 29,
-      "title": "Zipang",
-      "image": "https://cdn.myanimelist.net/images/anime/13/75740l.jpg",
-      "score": 7.54,
-      "id": "kcCV5INTQog"
+      "mal_id": 22,
+      "title": "Tennis no Oujisama",
+      "image": "https://cdn.myanimelist.net/images/anime/6/21624l.jpg",
+      "score": 7.85,
+      "genres": [
+        {
+          "mal_id": 30,
+          "type": "anime",
+          "name": "Sports",
+          "url": "https://myanimelist.net/anime/genre/30/Sports"
+        }
+      ],
+      "id": "OJ8N-jJlWvk"
     }
   ],
   "ratings": [
@@ -44,6 +72,14 @@
       "rating": 7,
       "note": "",
       "id": "rwarNmdAANU"
+    },
+    {
+      "mal_id": 22,
+      "title": "Tennis no Oujisama",
+      "image": "https://cdn.myanimelist.net/images/anime/6/21624l.jpg",
+      "rating": 10,
+      "note": "",
+      "id": "qQLhAGk_oG8"
     }
   ],
   "library": [
@@ -65,7 +101,7 @@
       "mal_id": 32,
       "title": "Shinseiki Evangelion Movie: Air/Magokoro wo, Kimi ni",
       "image": "https://cdn.myanimelist.net/images/anime/1404/98182l.jpg",
-      "status": "Watching",
+      "status": "Completed",
       "id": "6wzVVIOcOGo"
     },
     {
@@ -74,6 +110,13 @@
       "image": "https://cdn.myanimelist.net/images/anime/1439/93480l.jpg",
       "status": "Plan To Watch",
       "id": "t8IxJMtgln8"
+    },
+    {
+      "mal_id": 7,
+      "title": "Witch Hunter Robin",
+      "image": "https://cdn.myanimelist.net/images/anime/10/19969l.jpg",
+      "status": "Plan To Watch",
+      "id": "l6FOynF4DzM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

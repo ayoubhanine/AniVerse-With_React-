@@ -18,6 +18,7 @@ export default function AnimeActions({ anime }) {
         title: anime.title,
         image: anime.images.jpg.large_image_url,
         score: anime.score,
+          genres: anime.genres,
       })
     );
   };
