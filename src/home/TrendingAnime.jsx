@@ -11,9 +11,9 @@ export default function TrendingAnime() {
     (state) => state.anime
   );
 
-  useEffect(() => {
-    dispatch(fetchTrendingAnime());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchTrendingAnime());
+  // }, [dispatch]);
 
   if (loading) {
     return (

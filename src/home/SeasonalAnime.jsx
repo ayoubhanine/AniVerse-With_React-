@@ -11,9 +11,9 @@ export default function SeasonalAnime() {
     (state) => state.anime
   );
 
-  useEffect(() => {
-    dispatch(fetchSeasonalAnime());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchSeasonalAnime());
+  // }, [dispatch]);
 
   if (loading) {
     return (
