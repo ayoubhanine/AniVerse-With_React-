@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTrendingAnime } from "../features/anime/animeSlice";
 import AnimeCard from "./AnimeCard";
+import { Link } from "react-router-dom";
 
 export default function TrendingAnime() {
   const dispatch = useDispatch();
@@ -65,7 +66,10 @@ export default function TrendingAnime() {
         </h2>
 
         <button className="text-sm font-medium text-violet-500 transition hover:text-violet-400">
+          <Link to ="/anime">
           View All →
+          </Link>
+          
         </button>
       </div>
 
