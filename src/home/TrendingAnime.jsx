@@ -70,7 +70,7 @@ export default function TrendingAnime() {
       </div>
 
       
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         {trendingAnime.map((anime) => (
           <AnimeCard
             key={anime.mal_id}
