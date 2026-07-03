@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Star } from "lucide-react";
 import { fetchSeasonalAnime } from "../features/anime/animeSlice";
+import { Link } from "react-router-dom";
 
 export default function SeasonalAnime() {
   const dispatch = useDispatch();
@@ -45,7 +46,10 @@ export default function SeasonalAnime() {
         </div>
 
         <button className="hidden rounded-lg border border-violet-500 px-4 py-2 text-sm font-medium text-violet-400 transition hover:bg-violet-500 hover:text-white sm:block">
-          View All
+         
+          <Link
+            to="/anime">
+          View All  </Link>
         </button>
       </div>
 
